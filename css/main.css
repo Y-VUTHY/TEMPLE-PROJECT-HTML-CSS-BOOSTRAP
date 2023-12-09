@@ -1,0 +1,607 @@
+*{
+    font-family:arial;
+    margin: 0;
+    padding: 0;
+}
+/* __________________________________________________________________________home_________________________________________ */
+/* _______________________________________menu______________________________ */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+  }
+ul li a:not(.dropdown-content a):hover{
+  background:tomato;
+  color: #fff;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0.9vw 1.5vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border: 2px solid #333;
+  }
+#logo a{
+  color: rgb(12, 7, 27);
+  padding: 0.9vw 1.5vw;
+  font-size: 1.5vw;;
+  background: tomato;
+  border: 2px solid;
+}
+li.dropdown {
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1vw;
+    padding: 0.3vw ;
+  }
+  
+.dropdown-content a:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media (max-width:600px){
+  .dropdown-content a{
+    font-size: 2vw ;
+  }
+}
+/* _________________________image________________________ */
+.image {
+    background-image: url(../images/bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+}
+.image .box-cover{
+    width: 100%;
+    background: rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+.box-cover h1{
+    color: white;
+    font-size: 3.5vw;
+    padding-bottom: 20px;
+}
+.box-cover button{
+    border: none;
+    background: tomato;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box-cover button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+}
+/* _________________________________footer_______________________________ */
+.footer{
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.footer p{
+  color: #fff;
+  font-size: 1vw;
+  margin: 2vw;
+}
+@media (max-width:600px){
+  .footer p{
+    margin: 3vw;
+    font-size: 2vw;
+  }
+}
+/*____________________________________________home_____________________________________________ */
+/*____________________________________________contact_____________________________________________ */
+.form_container{
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vw;
+}
+.form_container input,textarea,.button{
+  width: 95%;
+  grid-template-rows: 1fr;
+  padding: 10px;
+  background: none;
+  color: white;
+}
+.form_container input, textarea{
+  border: 3px solid midnightblue;
+  font-size: 1.5vw;
+  border-radius: 2vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+input[type="text"]::placeholder,input[type="email"]::placeholder,textarea::placeholder{
+  color: white;
+  font-size: 1.5vw;
+}
+.form_container .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_container input[type="reset"]{
+  width: 20%;
+  margin:0 5vw;
+  font-size: 1.5vw;
+  background:tomato; 
+  border: none;
+  color: #fff;
+  border-radius: 2vw;
+}
+.form_container input[type="submit"]{
+  width: 20%;
+  margin:0 5vw;
+  font-size: 1.5vw;
+  background: teal; 
+  border: none;
+  color: #fff;
+  border-radius: 2vw;
+}
+.map iframe{
+  width: 100%;
+  height: 50vh;
+}
+
+/*____________________________________________angkor wat _____________________________________________ */
+.angkor_banner{
+  background-image: url(../images/angkor_image/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40vw;
+}
+.angkor_images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.angkor_images .photo{
+    width: 47%;
+    height: 40vw;
+    padding: 10px;
+} 
+.angkor_images .photo img{
+  width: 100%;
+  height: 80%;
+  box-shadow:0 0 10px;
+}
+.angkor_images .photo p{
+  width: 100%;
+  height: 20%;
+  font-size: 1.3vw;
+  padding: 1vw;
+}
+@media (max-width:600px){
+  .angkor_banner{
+    height: 55vw;
+  }
+  .angkor_images .photo{
+    width: 100%;
+    height: 75vw;
+    padding: 1vw;
+  }
+  .angkor_images .photo img{
+    width: 100%;
+    height: 80%;
+    box-shadow:0 0 10px;
+  }
+  .angkor_images .photo p{
+    width: 100%;
+    height: 30%;
+    font-size: 2.4vw;
+    padding: 1vw;
+  }
+}
+/*____________________________________________Bayon images_____________________________________________ */
+.bayon_banner{
+  background-image: url(../images/bayon_images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 42vw;
+  background-size: 100% 100%;
+}
+.bayon_banner .bayon_background{
+  width: 100%;
+  height: 42vw;
+  background: rgba(0,0,0,0.28);
+}
+.bayon_images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.bayon_images .photo{
+  width: 47%;
+  height: 40vw;
+  padding: 10px;
+}
+.bayon_images .photo img{
+  width: 100%;
+  height: 80%;
+  box-shadow:0 0 10px;
+}
+.bayon_images .photo p{
+  width: 100%;
+  height: 20%;
+  font-size: 1.3vw;
+  padding: 1vw;
+}
+@media (max-width:600px){
+  .bayon_banner,.bayon_background{
+    height: 55vw;
+  }
+  .bayon_images .photo{
+    width: 100%;
+    height: 75vw;
+    padding: 10px;
+  }
+  .bayon_images .photo img{
+    width: 100%;
+    height: 80%;
+    box-shadow:0 0 10px;
+  }
+  .bayon_images .photo p{
+    width: 100%;
+  height: 20%;
+  font-size: 1.3vw;
+  padding: 1vw;
+  }
+}
+/*____________________________________________Ta Prom images_____________________________________________ */
+.ta_prom_banner{
+  background-image: url(../images/ta_prom_images/bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40vw;
+}
+.ta_prom_banner .ta_prom_background{
+  width: 100%;
+  height: 40vw;
+  background: rgba(0,0,0,0.3);
+}
+.ta_prom_images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ta_prom_images .photo{
+  width: 47%;
+  height: 40vw;
+  padding: 10px;
+}
+.ta_prom_images .photo img{
+  width: 100%;
+  height: 80%;
+  box-shadow:0 0 10px;
+}
+.ta_prom_images .photo p{
+  width: 100%;
+  height: 20%;
+  font-size: 1.3vw;
+  padding: 1vw;
+}
+@media (max-width:600px){
+  .ta_prom_banner,.ta_prom_background{
+    height: 55vw;
+  }
+  .ta_prom_images .photo{
+    width: 100%;
+    height: 75vw;
+    padding: 10px;
+  }
+  .ta_prom_images .photo img{
+    width: 100%;
+    height: 80%;
+    box-shadow:0 0 10px;
+  }
+  .ta_prom_images .photo p{
+    width: 100%;
+    height: 30%;
+    font-size: 2.4vw;
+    padding: 1vw;
+  }
+}
+/*____________________________________________Baphoun Temple_____________________________________________ */
+.baphoun_banner{
+  background-image: url(../images/baphoun_images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40vw;
+}
+.baphoun_background{
+  width: 100%;
+  height: 40vw;
+  background: rgba(0,0,0,0.3);
+}
+.baphoun_images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.baphoun_images .photo{
+  width: 47%;
+  height: 40vw;
+  padding: 10px;
+}
+.baphoun_images .photo img{
+  width: 100%;
+  height: 80%;
+  box-shadow:0 0 10px;
+}
+.baphoun_images .photo p{
+  width: 100%;
+  height: 20%;
+  font-size: 1.3vw;
+  padding: 1vw;
+}
+@media (max-width:600px){
+  .baphoun_banner,.baphoun_background{
+    height: 55vw;
+  }
+  .baphoun_images .photo{
+    width: 100%;
+    height: 75vw;
+    padding: 10px;
+  }
+  .baphoun_images .photo img{
+    width: 100%;
+    height: 80%;
+    box-shadow:0 0 10px;
+  }
+  .baphoun_images .photo p{
+    width: 100%;
+    height: 30%;
+    font-size: 2.4vw;
+    padding: 1vw;
+  }
+}
+/*___________________________________________Phnom Bakheng Temple_____________________________________________ */
+.phnom_bakheng_banner{
+  background-image: url(../images/phnom_bakheng_images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40vw;
+}
+
+.phnom_bakheng_background{
+  width: 100%;
+  height: 40vw;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phnom_bakheng_background h2{
+  color: rgba(218, 211, 211,0.8);
+  font-size: 3vw;
+  font-family: cursive;
+  box-sizing: 0 0 20px;
+}
+
+.phnom_bakheng_images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.phnom_bakheng_images .photo{
+  width: 47%;
+  height: 40vw;
+  padding: 10px;
+}
+.phnom_bakheng_images .photo img{
+  width: 100%;
+  height: 80%;
+  box-shadow:0 0 10px;
+}
+.phnom_bakheng_images .photo p{
+  width: 100%;
+  height: 20%;
+  font-size: 1.3vw;
+  padding: 1vw;
+}
+@media (max-width:600px){
+  .phnom_bakheng_banner,.phnom_bakheng_background{
+    height: 55vw;
+  }
+  .phnom_bakheng_images .photo{
+    width: 100%;
+    height: 75vw;
+    padding: 10px;
+  }
+  .phnom_bakheng_images .photo img{
+    width: 100%;
+    height: 80%;
+    box-shadow:0 0 10px;
+  }
+  .phnom_bakheng_images .photo p{
+    width: 100%;
+    height: 30%;
+    font-size: 2.4vw;
+    padding: 1vw;
+  }
+}
+/*___________________________________________Banteay Srey Temple_____________________________________________ */
+.banteay_srey_banner{
+  background-image: url(../images/banteay_srey_images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40vw;
+}
+
+.banteay_srey_background{
+  width: 100%;
+  height: 40vw;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banteay_srey_background h2{
+  color: rgba(218, 211, 211,0.8);
+  font-size: 3vw;
+  font-family: cursive;
+  box-sizing: 0 0 20px;
+}
+
+.banteay_srey_images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.banteay_srey_images .photo{
+  width: 47%;
+  height: 40vw;
+  padding: 10px;
+}
+.banteay_srey_images .photo img{
+  width: 100%;
+  height: 80%;
+  box-shadow:0 0 10px;
+}
+.banteay_srey_images .photo p{
+  width: 100%;
+  height: 20%;
+  font-size: 1.3vw;
+  padding: 1vw;
+}
+@media (max-width:600px){
+  .banteay_srey_banner,.banteay_srey_background{
+    height: 55vw;
+  }
+  .banteay_srey_images .photo{
+    width: 100%;
+    height: 75vw;
+    padding: 10px;
+  }
+  .banteay_srey_images .photo img{
+    width: 100%;
+    height: 80%;
+    box-shadow:0 0 10px;
+  }
+  .banteay_srey_images .photo p{
+    width: 100%;
+    height: 30%;
+    font-size: 2.4vw;
+    padding: 1vw;
+  }
+}
+/*___________________________________________PreRup Temple_____________________________________________ */
+.prerup_banner{
+  background-image: url(../images/prerup_images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40vw;
+}
+
+.prerup_background{
+  width: 100%;
+  height: 40vw;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prerup_background h2{
+  color: rgba(218, 211, 211,0.8);
+  font-size: 3vw;
+  font-family: cursive;
+  box-sizing: 0 0 20px;
+}
+
+.prerup_images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.prerup_images .photo{
+  width: 47%;
+  height: 40vw;
+  padding: 10px;
+}
+.prerup_images .photo img{
+  width: 100%;
+  height: 80%;
+  box-shadow:0 0 10px;
+}
+.prerup_images .photo p{
+  width: 100%;
+  height: 20%;
+  font-size: 1.3vw;
+  padding: 1vw;
+}
+@media (max-width:600px){
+  .prerup_banner,.prerup_background{
+    height: 55vw;
+  }
+  .prerup_images .photo{
+    width: 100%;
+    height: 75vw;
+    padding: 10px;
+  }
+  .prerup_images .photo img{
+    width: 100%;
+    height: 80%;
+    box-shadow:0 0 10px;
+  }
+  .prerup_images .photo p{
+    width: 100%;
+    height: 30%;
+    font-size: 2.4vw;
+    padding: 1vw;
+  }
+}
